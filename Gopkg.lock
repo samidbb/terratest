@@ -2,7 +2,7 @@
 
 
 [[projects]]
-  digest = "1:eaa4ac76be4c650e52d8ebc411348b1a1eed8d382b3d91c2c62df37cd446a8bd"
+  digest = "1:b45ca30c12f3befb90cb69488b1175aa638310abeb670730d88bd9659fb3fb69"
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -52,6 +52,7 @@
     "service/s3/s3manager",
     "service/sns",
     "service/sqs",
+    "service/ssm",
     "service/sts",
   ]
   pruneopts = "UT"
@@ -185,6 +186,7 @@
   input-imports = [
     "github.com/aws/aws-sdk-go/aws",
     "github.com/aws/aws-sdk-go/service/route53",
+    "github.com/aws/aws-sdk-go/service/ssm",
     "github.com/gruntwork-io/terratest/modules/aws",
     "github.com/gruntwork-io/terratest/modules/logger",
     "github.com/stretchr/testify/assert",
